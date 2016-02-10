@@ -9,7 +9,10 @@
   <strong>Description:</strong>
   <%= @idea.description %>
 </p>
-
+<p>
+  <strong>Completed:</strong>
+  <%= @idea.completed %>
+</p>
 <p>
   <strong>Picture:</strong>
   <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
